@@ -1,26 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import Titulo from '../componentes/Titulo'
+import Filtro from '../componentes/Filter'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
+    <main>
+      <div className='d-flex justify-content-center'>
+          <Titulo></Titulo>
+      </div>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+          <Filtro></Filtro>
       </div>
-      <div className="card">
-          <h1>
-            Gabriel Silva de Aquino
-          </h1>
-      </div>
-    </div>
+    </main>
   )
 }
 
